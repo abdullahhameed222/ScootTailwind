@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Careers</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,9 +39,52 @@
 </head>
 
 <body class="font-SpaceMono">
+    <header
+        class=" flex justify-between max-w-[1106px] mx-auto  pt-[22px] pb-[21px]  sm:items-center sm:justify-center md:justify-between md:py-[33px] md:px-10 xl:px-0 xl:py-[22px]">
+        <img id="hamburger__icon" class="sm:block sm:absolute sm:left-8 md:hidden hamburger__icon"
+            src="icon-hamburger.svg" alt="">
+        <img id="close__icon" class="sm:block sm:absolute sm:left-8 md:hidden" src="icon-closehamburger.svg" alt="">
+        <div class="flex items-center gap-[58px]">
 
+            <a href="home.html">
+                <img class="sm:max-w-[75px] md:max-w-[107px]" src="logo.svg" alt="logo">
+            </a>
+            <div id="navbar__container"
+                class=" sm:py-8 sm:pt-16 sm:pb-6 sm:px-8  sm:max-w-[256px] sm:fixed sm:top-[63px] sm:left-0 sm:w-[100%] sm:bg-[#333A44]  z-50 sm:h-[100vh] sm:hidden sm:flex-col  sm:items-center sm:justify-start  md:flex md:gap-8 md:  md:static md:flex-col md:bg-white md:h-[unset] md:px-0 md:py-0">
+                <div class="max-h-[516px] h-[100%] flex justify-between flex-col">
+                    <ul class="flex gap-6 flex-col  md:gap-8 md:flex-row">
+                        <li>
+                            <a href="about.html"
+                                class="text-darkGray font-SpaceMono  duration-500 font-bold text-[15px] leading-relaxed transition-all hover:text-Orange hover:cursor-pointer sm:text-[#E5ECF4] md:text-darkGray ">About</a>
+                        </li>
+                        <li>
+                            <a href="locations.html"
+                                class="text-darkGray  font-SpaceMono duration-500 font-bold text-[15px] leading-relaxed  hover:text-Orange hover:cursor-pointer sm:text-[#E5ECF4] md:text-darkGray ">Location</a>
+                        </li>
+                        <li>
+                            <a href="careers.html"
+                                class="text-darkGray  font-SpaceMono duration-500 font-bold text-[15px] leading-relaxed  hover:text-Orange hover:cursor-pointer  sm:text-[#E5ECF4] md:text-darkGray ">Careers</a>
+                        </li>
+                    </ul>
+                    <a href="#"
+                        class="text-[15px] bg-Orange transition-all duration-500 border-[3px] border-transparent font-SpaceMono text-white font-bold px-10 py-[15px] leading-relaxed hover:cursor-pointer hover:bg-transparent hover:text-Orange  hover:border-Orange sm:block md:hidden">
+                        Get Scootin
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <a href="#"
+            class="text-[15px] bg-Orange transition-all duration-500 border-[3px] border-transparent font-SpaceMono text-white font-bold px-10 py-[15px] leading-relaxed hover:cursor-pointer hover:bg-transparent hover:text-Orange  hover:border-Orange sm:hidden md:block">
+            Get Scootin
+        </a>
+
+    </header>
+    <div class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden top-[63px]" id="overlay"></div>
     <section
-        class=" bg-[url('about__bg.png')]  bg-cover max-w-[1440px] mx-auto py-[72px] pl-[165px] mb-[120px] sm:bg-[url('careers__bgmobile.jpg')] sm:bg-center  sm:py-[60px] sm:px-8 sm:mb-[72px] sm:text-center 
+        class="  bg-cover max-w-[1440px] mx-auto py-[72px] pl-[165px] mb-[120px] sm:bg-[url('careers__bgmobile.jpg')] sm:bg-center  sm:py-[60px] sm:px-8 sm:mb-[72px] sm:text-center 
         md:bg-[url('careers__bgtablet.png')]  md:py-[72px] md:pl-24 md:text-left md:mb-36 lg:bg-[url('careers__bgdesktop.png')] lg:bg-right lg:mb-[120px] lg:pl-[165px] ">
         <h1
             class="font-bold text-[56px] text-white leading-none tracking-[-2.5px] sm:tracking-[-1.79px] md:tracking-[-2.5px] sm:text-[40px] md:text-[56px]">
@@ -313,15 +356,15 @@
                 </a>
                 <ul class="flex gap-8 sm:flex-col sm:gap-4 sm:items-center md:flex-row md:gap-8">
                     <li>
-                        <a href="#"
+                        <a href="about.html"
                             class="text-darkGray font-SpaceMono  duration-500 font-bold text-[15px] leading-relaxed transition-all hover:text-Orange hover:cursor-pointer ">About</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="locations.html"
                             class="text-darkGray  font-SpaceMono duration-500 font-bold text-[15px] leading-relaxed  hover:text-Orange hover:cursor-pointer ">Location</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="careers.html"
                             class="text-darkGray  font-SpaceMono duration-500 font-bold text-[15px] leading-relaxed  hover:text-Orange hover:cursor-pointer ">Careers</a>
                     </li>
                 </ul>
@@ -352,6 +395,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

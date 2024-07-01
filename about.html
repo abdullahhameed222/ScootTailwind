@@ -39,6 +39,50 @@
 </head>
 
 <body class="font-SpaceMono">
+    <header
+        class=" flex justify-between max-w-[1106px] mx-auto  pt-[22px] pb-[21px]  sm:items-center sm:justify-center md:justify-between md:py-[33px] md:px-10 xl:px-0 xl:py-[22px]">
+        <img id="hamburger__icon" class="sm:block sm:absolute sm:left-8 md:hidden hamburger__icon"
+            src="icon-hamburger.svg" alt="">
+        <img id="close__icon" class="sm:block sm:absolute sm:left-8 md:hidden" src="icon-closehamburger.svg" alt="">
+        <div class="flex items-center gap-[58px]">
+
+            <a href="home.html">
+                <img class="sm:max-w-[75px] md:max-w-[107px]" src="logo.svg" alt="logo">
+            </a>
+            <div id="navbar__container"
+                class=" sm:py-8 sm:pt-16 sm:pb-6 sm:px-8  sm:max-w-[256px] sm:fixed sm:top-[63px] sm:left-0 sm:w-[100%] sm:bg-[#333A44]  z-50 sm:h-[100vh] sm:hidden sm:flex-col  sm:items-center sm:justify-start  md:flex md:gap-8 md:  md:static md:flex-col md:bg-white md:h-[unset] md:px-0 md:py-0">
+                <div class="max-h-[516px] h-[100%] flex justify-between flex-col">
+                    <ul class="flex gap-6 flex-col  md:gap-8 md:flex-row">
+                        <li>
+                            <a href="about.html"
+                                class="text-darkGray font-SpaceMono  duration-500 font-bold text-[15px] leading-relaxed transition-all hover:text-Orange hover:cursor-pointer sm:text-[#E5ECF4] md:text-darkGray ">About</a>
+                        </li>
+                        <li>
+                            <a href="locations.html"
+                                class="text-darkGray  font-SpaceMono duration-500 font-bold text-[15px] leading-relaxed  hover:text-Orange hover:cursor-pointer sm:text-[#E5ECF4] md:text-darkGray ">Location</a>
+                        </li>
+                        <li>
+                            <a href="careers.html"
+                                class="text-darkGray  font-SpaceMono duration-500 font-bold text-[15px] leading-relaxed  hover:text-Orange hover:cursor-pointer  sm:text-[#E5ECF4] md:text-darkGray ">Careers</a>
+                        </li>
+                    </ul>
+                    <a href="#"
+                        class="text-[15px] bg-Orange transition-all duration-500 border-[3px] border-transparent font-SpaceMono text-white font-bold px-10 py-[15px] leading-relaxed hover:cursor-pointer hover:bg-transparent hover:text-Orange  hover:border-Orange sm:block md:hidden">
+                        Get Scootin
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <a href="#"
+            class="text-[15px] bg-Orange transition-all duration-500 border-[3px] border-transparent font-SpaceMono text-white font-bold px-10 py-[15px] leading-relaxed hover:cursor-pointer hover:bg-transparent hover:text-Orange  hover:border-Orange sm:hidden md:block">
+            Get Scootin
+        </a>
+
+    </header>
+    <div class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden top-[63px]" id="overlay"></div>
 
     <section
         class=" bg-[url('about__bg.png')]  bg-cover max-w-[1440px] mx-auto py-[72px] pl-[165px] mb-[120px] sm:bg-[url('about__bgmobile.png')] sm:bg-center sm:Py-[60px] sm:px-8 sm:mb-[72px] sm:text-center 
@@ -186,45 +230,46 @@
                 class="text-[40px] tracking-[-1.79px] font-bold text-darkBlue leading-5 w-[100%] max-w-[350px] sm:text-2xl sm:text-center sm:tracking-[-1.07px] md:text-center xl:text-[40px] ">
                 How it
                 works</h2>
-            <div class="flex flex-col gap-4">
-                <div class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8  md:pr-8 md:px-10 lg:pr-10">
-                    <div class="flex justify-between items-baseline mb-6 ">
-                        <h3
-                            class="text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:text-[18px] md:text-2xl  md:tracking-[-1.07px]">
-                            How do I
-                            download
-                            the
-                            app?</h3>
-                        <img class="sm:mt-5 md:mt-0" src="icon-chevronopen.svg" alt="">
-                    </div>
-                    <p class="font-LexendDeca text-[15px] text-darkBlue leading-relaxed ">To download the Scoot app, you
-                        can
-                        search “Scoot”
-                        in both the
-                        App and Google
-                        Play stores. An even
-                        simpler way to do it would be to click the relevant link at the bottom of this page and you’ll
-                        be
-                        re-directed to the correct page.</p>
-                </div>
-
-                <div class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8 md:pr-8 md:pl-10">
+            <div class="flex flex-col gap-4 sm:w-[unset] md:w-[100%]">
+                <div
+                    class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8 md:pr-8 md:pl-10 question-box hover:bg-[#FFF4DF] hover:cursor-pointer">
                     <div class="flex justify-between items-center">
                         <h3
-                            class="text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:text-[18px] sm:max-w-[193px] md:max-w-[unset] md:text-2xl md:whitespace-nowrap">
-                            Can I find a
-                            nearby Scoots?</h3>
-                        <img src="icon-chevronclose.svg" alt="">
+                            class=" question text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:text-[18px] sm:max-w-[193px] md:max-w-[unset] md:text-2xl md:whitespace-nowrap">
+                            How do I download the app?</h3>
+                        <img id="faq-close" class="sm:hidden" src="icon-chevronclose.svg" alt="">
+                        <img id="faq-open" src="icon-chevronopen.svg" alt="">
                     </div>
+                    <p class="font-LexendDeca text-[15px] text-darkBlue leading-relaxed answer ">To download the Scoot
+                        app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it
+                        would be to click the relevant link at the bottom of this page and you’ll be re-directed to the
+                        correct page.</p>
                 </div>
 
-                <div class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8 md:pr-8 md:pl-10">
+                <div
+                    class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8 md:pr-8 md:pl-10 question-box hover:bg-[#FFF4DF] hover:cursor-pointer">
                     <div class="flex justify-between items-center">
                         <h3
-                            class="text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:text-[18px] sm:max-w-[193px] md:max-w-[unset] md:text-2xl md:whitespace-nowrap">
+                            class=" question text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:text-[18px] sm:max-w-[193px] md:max-w-[unset] md:text-2xl md:whitespace-nowrap">
+                            Can I find a nearby Scoots?</h3>
+                        <img id="faq-close" class="sm:hidden" src="icon-chevronclose.svg" alt="">
+                        <img id="faq-open" src="icon-chevronopen.svg" alt="">
+                    </div>
+                    <p class="font-LexendDeca text-[15px] text-darkBlue leading-relaxed answer ">To find nearby scoot go
+                        to out app or visit our Scoot.com</p>
+                </div>
+
+                <div
+                    class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8 md:pr-8 md:pl-10 question-box hover:bg-[#FFF4DF] hover:cursor-pointer">
+                    <div class="flex justify-between items-center">
+                        <h3
+                            class=" question text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:text-[18px] sm:max-w-[193px] md:max-w-[unset] md:text-2xl md:whitespace-nowrap">
                             Do I need a license to ride?</h3>
-                        <img src="icon-chevronclose.svg" alt="">
+                        <img id="faq-close" class="sm:hidden" src="icon-chevronclose.svg" alt="">
+                        <img id="faq-open" src="icon-chevronopen.svg" alt="">
                     </div>
+                    <p class="font-LexendDeca text-[15px] text-darkBlue leading-relaxed answer ">We do not entertain
+                        anyone without a license.</p>
                 </div>
             </div>
         </div>
@@ -237,37 +282,50 @@
             <h2
                 class="text-[40px] tracking-[-1.79px] font-bold text-darkBlue leading-5 w-[100%] max-w-[350px] sm:text-2xl sm:text-center sm:tracking-[-1.07px] md:text-center xl:text-[40px] ">
                 Safe driving</h2>
-            <div class="flex flex-col gap-4">
-                <div class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8  md:pr-8 md:px-10 lg:pr-10">
-                    <div class="flex justify-between items-baseline mb-6 ">
+
+            <div class="flex flex-col gap-4 sm:w-[unset] md:w-[100%]">
+                <div
+                    class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8 md:pr-8 md:pl-10 question-box hover:bg-[#FFF4DF] hover:cursor-pointer">
+                    <div class="flex justify-between items-center">
                         <h3
-                            class="text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:max-w-[152px] md:max-w-[unset] sm:text-[18px] md:text-2xl  md:tracking-[-1.07px]">
+                            class="question text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:text-[18px] sm:max-w-[193px] md:max-w-[unset] md:text-2xl md:whitespace-nowrap">
                             Should I wear a helmet?</h3>
-                        <img class="sm:mt-5 md:mt-0" src="icon-chevronopen.svg" alt="">
+                        <img id="faq-close" class="sm:hidden" src="icon-chevronclose.svg" alt="">
+                        <img id="faq-open" src="icon-chevronopen.svg" alt="">
                     </div>
-                    <p class="font-LexendDeca text-[15px] text-darkBlue leading-relaxed ">Yes, please do! All cities
-                        have different laws. But we strongly strongly strongly recommend always wearing a helmet
-                        regardless of the local laws. We like you and we want you to be as safe as possible while
-                        Scooting.</p>
+                    <p class="font-LexendDeca text-[15px] text-darkBlue leading-relaxed answer ">Rules and regulations
+                        for scooters encompass various legal requirements and safety guidelines that riders must follow
+                        when using these vehicles on public roads.</p>
                 </div>
 
-                <div class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8 md:pr-8 md:pl-10">
+                <div
+                    class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8 md:pr-8 md:pl-10 question-box hover:bg-[#FFF4DF] hover:cursor-pointer">
                     <div class="flex justify-between items-center">
                         <h3
-                            class="text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:text-[18px] sm:max-w-[193px] md:max-w-[unset] md:text-2xl md:whitespace-nowrap">
+                            class="question text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:text-[18px] sm:max-w-[193px] md:max-w-[unset] md:text-2xl md:whitespace-nowrap">
                             How about the rules & regulations?</h3>
-                        <img src="icon-chevronclose.svg" alt="">
+                        <img id="faq-close" class="sm:hidden" src="icon-chevronclose.svg" alt="">
+                        <img id="faq-open" src="icon-chevronopen.svg" alt="">
                     </div>
+                    <p class="font-LexendDeca text-[15px] text-darkBlue leading-relaxed answer ">Rules and regulations
+                        for scooters encompass various legal requirements and safety guidelines that riders must follow
+                        when using these vehicles on public roads.</p>
                 </div>
 
-                <div class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8 md:pr-8 md:pl-10">
+                <div
+                    class="bg-[#F2F5F9] py-8 px-10 sm:py-8 sm:pl-8 sm:pr-7 md:py-8 md:pr-8 md:pl-10 question-box hover:bg-[#FFF4DF] hover:cursor-pointer">
                     <div class="flex justify-between items-center">
                         <h3
-                            class="text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:text-[18px] sm:max-w-[193px] md:max-w-[unset] md:text-2xl md:whitespace-nowrap">
+                            class=" question text-2xl tracking-[-1.07px] leading-[1.4]  text-darkBlue font-bold sm:text-[18px] sm:max-w-[193px] md:max-w-[unset] md:text-2xl md:whitespace-nowrap">
                             What if I damage my Scoot?</h3>
-                        <img src="icon-chevronclose.svg" alt="">
+                        <img id="faq-close" class="sm:hidden" src="icon-chevronclose.svg" alt="">
+                        <img id="faq-open" src="icon-chevronopen.svg" alt="">
                     </div>
+                    <p class="font-LexendDeca text-[15px] text-darkBlue leading-relaxed answer ">Our Scoot come with a 1
+                        year Warranty</p>
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -343,15 +401,15 @@
                 </a>
                 <ul class="flex gap-8 sm:flex-col sm:gap-4 sm:items-center md:flex-row md:gap-8">
                     <li>
-                        <a href="#"
+                        <a href="about.html"
                             class="text-darkGray font-SpaceMono  duration-500 font-bold text-[15px] leading-relaxed transition-all hover:text-Orange hover:cursor-pointer ">About</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="locations.html"
                             class="text-darkGray  font-SpaceMono duration-500 font-bold text-[15px] leading-relaxed  hover:text-Orange hover:cursor-pointer ">Location</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="careers.html"
                             class="text-darkGray  font-SpaceMono duration-500 font-bold text-[15px] leading-relaxed  hover:text-Orange hover:cursor-pointer ">Careers</a>
                     </li>
                 </ul>
@@ -382,6 +440,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
